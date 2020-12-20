@@ -1,0 +1,112 @@
+.button {
+  color: rgb(255, 255, 255, 0.9);
+  border-radius: 5px;
+  background: rgb(0, 0, 0, 0.4);
+  border: none;
+  padding: 5px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+/* rox and column divs together make side by side rows */
+.row {
+  display: flex;
+  padding-top: 0;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.column img {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+}
+
+#profile {
+  /* width dong nothing, max width is why */
+  /* width: calc(100px+0.5vw); */
+  max-width: 200px;
+  display: inline;
+}
+
+#pun {
+  text-transform: lowercase;
+}
+
+/* .wrapper {
+margin-left:20px
+} */
+
+/* created wrapper class to use Pseudo-elements to add divider between sections */
+.wrapper::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(50, 50, 50, 0.5),
+    rgba(50, 50, 50, 0)
+  );
+  display: block;
+}
+
+/* ptags and ul inside the main class */
+/* main{
+  color: #1c3454;
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+  margin-left: 20px;
+} */
+
+.top-bottom {
+  color: #461623;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-weight: 550;
+}
+
+h1 {
+  font-size: calc(20px+0.5vw);
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-shadow: 1px 1px rgba(140, 140, 140, 0.7);
+}
+h2,
+h3 {
+  letter-spacing: 1px;
+  color: #461623;
+  text-shadow: 1px 1px rgba(140, 140, 140, 0.7);
+  margin-left: 20px;
+}
+h2 {
+  font-size: calc(16px+0.5vw);
+}
+
+h3 {
+  font-size: calc(14px+0.5vw);
+}
+
+footer {
+  font-size: small;
+}
+
+a:link {
+  color: #1c3454;
+}
+a:visited {
+  color: rgb(2, 97, 21);
+}
+a:hover {
+  color: rgb(7, 164, 7);
+}
+a:active {
+  color: rgb(79, 4, 16);
+}
