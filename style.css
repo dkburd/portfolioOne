@@ -1,10 +1,13 @@
 /* this will only appear if the js file fails */
-body{
-  background:grey:
+body {
+  background: grey;
+}
+
+li {
+  padding: 5px;
 }
 
 .button {
-
   color: rgb(255, 255, 255, 0.9);
   border-radius: 5px;
   background: rgb(0, 0, 0, 0.4);
@@ -25,32 +28,23 @@ body{
   background: rgb(255, 255, 255, 0.2);
 }
 
+.image,
 .column img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   overflow: hidden;
-  /* padding-right: 20px; */
-  align-self: right;
-}
-.image {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  overflow: hidden;
-  /* padding-right: 20px; */
   align-self: right;
 }
 
 #profile {
-  /* width dong nothing, max width is why */
-  /* width: calc(100px+0.5vw); */
-  max-width: 200px;
+  width: 250px;
   display: inline;
 }
 
 #pun {
   text-transform: lowercase;
+  font-size: 18px;
 }
 
 /* created wrapper class to use Pseudo-elements to add divider between sections */
@@ -72,17 +66,21 @@ body{
   text-align: center;
   font-weight: 550;
 }
+div > h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-shadow: 1px 1px rgba(140, 140, 140, 0.7);
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+}
 
 header {
   margin-top: 30px;
 }
 
-h1 {
-  font-size: calc(20px+0.5vw);
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  text-shadow: 1px 1px rgba(140, 140, 140, 0.7);
-}
 h2,
 h3 {
   letter-spacing: 1px;
@@ -95,11 +93,11 @@ div > a {
   padding: 10px 20px;
 }
 h2 {
-  font-size: calc(16px+0.5vw);
+  font-size: 22px;
 }
 
 h3 {
-  font-size: calc(14px+0.5vw);
+  font-size: 18px;
 }
 
 footer {
@@ -118,3 +116,10 @@ a:hover {
 a:active {
   color: rgb(79, 4, 16);
 }
+/* could not get the font size to work selecting h1, other properties were working not sure why
+h1 {
+  font-size: 100px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-shadow: 1px 1px rgba(140, 140, 140, 0.7);
+} */
