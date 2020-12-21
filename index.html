@@ -15,22 +15,26 @@
 </head>
 
 <body>
-    <header class="wrapper top-bottom center">
+    <!-- top bottom class to set text color and center for both pieces -->
+    <header class="wrapper top-bottom">
         <div>
             <h1>dana burd</h1>
             <p>software developer in training</p>
         </div>
         <img id="profile" src="images/dana-circle-cropped.png" alt="dana burd profile picture"
             title="dana burd profile picture">
+<!-- text generated trough js -->
         <p id="pun"></p>
-    </header>
+    </header
 
     <main>
+        <!-- articles are more semantic than divs? -->
         <article class="wrapper">
             <h2>hello world</h2>
             <p>I'm Dana Burd, an accountant and web development student at Bloc, located in Oakland, California</p>
         </article>
         <article class="wrapper">
+            <!-- for flex went back and forth on image stacking -->
             <div class="row">
                 <div class="column">
                     <h2>about</h2>
@@ -42,6 +46,7 @@
 
                     <p>Outside of work I like to spend my time practicing aikido, playing video games and visiting California's incredible beaches. </p>
                     <div>
+                        <!-- used pseudo-element to make dividers hr just here for requirement -->
                         <hr>
                         <h3>My Interests Include:</h3>
                         <ul>
@@ -75,12 +80,11 @@
                 </div>
             </div>
         </article>
-        <!-- //have not used wrapper yet -->
         <article class="wrapper">
             <h2>contact</h2>
             <p>Looking for collaborators on your next proejct? <em>Count</em> me in!</p>
             <div>
-
+<!-- had to move the a tags inside the buttons, is there a way to make the button itself the link? was intended purpose of having a tag outside -->
             <button class="button"><a href="https://www.linkedin.com/in/danaburd" target="_blank">
                     Linkedin</a></button>
 

@@ -46,7 +46,7 @@ button > a {
   padding: 10px;
   background: rgb(255, 255, 255, 0.2);
 }
-
+/* crop overflow down to keep aspect ratio */
 .image,
 .column img {
   width: 250px;
@@ -123,23 +123,22 @@ h3 {
 footer {
   font-size: small;
 }
-/* 
-a:link {
+
+/* to target buttons children of li and p, to avoid getting the button links, is there a better way */
+p > a:link,
+li > a:link {
   color: #1c3454;
 }
-a:visited {
+p > a:visited,
+li > a:visited {
   color: rgb(2, 97, 21);
 }
-a:hover {
+
+p > a:hover,
+li > a:hover {
   color: rgb(7, 164, 7);
 }
-a:active {
+p > a:active,
+li > a:active {
   color: rgb(79, 4, 16);
-} */
-/* could not get the font size to work selecting h1, other properties were working not sure why
-h1 {
-  font-size: 100px;
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  text-shadow: 1px 1px rgba(140, 140, 140, 0.7);
-} */
+}
