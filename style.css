@@ -6,6 +6,9 @@ body {
 li {
   padding: 5px;
 }
+hr {
+  display: none;
+}
 
 .button {
   color: rgb(255, 255, 255, 0.9);
@@ -15,6 +18,14 @@ li {
   padding: 5px 10px;
   margin-bottom: 70px;
   margin-top: 10px;
+}
+
+.rightcolumn {
+  /* for some reason paddingcreates a blank space in the background the side of the margin, padding does not */
+  /* margin-top: 50px; */
+  flex: 50%;
+  padding-top: 120px;
+  background: rgb(255, 255, 255, 0.2);
 }
 
 /* rox and column divs together make side by side rows */
@@ -35,6 +46,8 @@ li {
   object-fit: cover;
   overflow: hidden;
   align-self: right;
+  margin: 5px;
+  /* border: 5px solid #1c3454; */
 }
 
 #profile {
