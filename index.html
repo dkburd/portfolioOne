@@ -25,7 +25,7 @@
             title="dana burd profile picture">
 <!-- text generated trough js -->
         <p id="pun"></p>
-    </header
+    </header>
 
     <main>
         <!-- articles are more semantic than divs? -->
@@ -84,11 +84,20 @@
             <h2>contact</h2>
             <p>Looking for collaborators on your next proejct? <em>Count</em> me in!</p>
             <div>
-<!-- had to move the a tags inside the buttons, is there a way to make the button itself the link? was intended purpose of having a tag outside -->
+<button class="button"><a href="https://www.linkedin.com/in/danaburd" target="_blank">
+                Linkedin</a></button>
+        
+<button class="button"> <a href="https://github.com/dkburd" target="_blank"> Github</a></button>
+
+<!-- both button in an a tag and a tag in a button work but causing error message in validation, why? -->
+<!-- error: The element a must not appear as a descendant of the button element.
             <button class="button"><a href="https://www.linkedin.com/in/danaburd" target="_blank">
                     Linkedin</a></button>
 
-            <button class="button"> <a href="https://github.com/dkburd" target="_blank"> Github</a></button>
+            <button class="button"> <a href="https://github.com/dkburd" target="_blank"> Github</a></button> -->
+
+<!-- error: The element button must not appear as a descendant of the a element -->
+            <!-- <a href="https://www.linkedin.com/in/danaburd" target="_blank"><button class="button">Linkedin</button></a> -->
             </div>
 
         </article>
